@@ -7,7 +7,7 @@ var bodyparser = require('koa-bodyparser');
 var cors = require('koa-cors');
 var errorhandler = require('koa-errorhandler');
 var static = require('koa-static')
-var port = process.env.PORT || 80
+var port = process.env.PORT || 3000
 //全局异常捕获
 app.use(errorhandler());
 //允许跨域访问
