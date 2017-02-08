@@ -36,6 +36,7 @@ exports.post = function * (){
         patch_model:patch_model,
         created_at:Date.now(),
       }
+
       if(defArg && patch_model == 'condition'){
         patchData.defArg = defArg
       }

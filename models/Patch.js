@@ -10,7 +10,7 @@ var PatchSchema = new Schema({
   user:{ type: Schema.Types.ObjectId, ref: 'User' },
   patch_url:{type:String,require:true},
   patch_model:{type:String,require:true},
-  defArg:{type:String,default:false},
+  defArg:{type:String,require:false},
   created_at:{type:Date,default:Date.now()},
   updated_at:{type:Date,default:Date.now()}
 });
