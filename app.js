@@ -13,8 +13,6 @@ var scheme = require('koa-scheme');
 var config = require('./config/default');
 var routerCache = require('koa-router-cache');
 var core = require('./lib/core')
-var session = require('koa-generic-session');
-var redisStore = require('koa-redis');
 
 var User = require('./lib/User');
 app.keys = ['keys', 'keykeys'];
@@ -28,9 +26,6 @@ app.use(static('static'));
 app.use(bodyparser());
 app.use(staticCache(config.staticCacheConf));
 app.use(scheme(config.schemeConf));
-app.use(session({
-  store:redisStore()
-}));
 
 var jwt = require('koa-jwt');
 
