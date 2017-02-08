@@ -12,7 +12,7 @@ function sendEmail(key,token){
     port:465,
     auth:{
       user:"272535439@qq.com", //帐号,
-      pass:"wsd18249701435"
+      pass:"kgzlvqzydbgycaig"
     }
   });
 
