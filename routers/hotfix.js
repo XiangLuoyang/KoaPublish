@@ -33,7 +33,7 @@ exports.post = function *(){
   var version = body.cm_appVersion;
   var appName = body.cm_appName;
   var appKey = body.cm_appKey;
-  var jspath = homeDir+'/static/patchFile/'+'_'+version + '_' + appKey + '_main.js';
+  var jspath = homeDir+'/static/patchFile/'+ appName + '_'+version + '_' + appKey + '_main.js';
   console.log(jspath);
   if(fs.existsSync(jspath)){
     //yield client.SELECT(2)
