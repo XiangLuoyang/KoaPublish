@@ -27,6 +27,7 @@
     "koa-router-cache": "^2.0.0",
     "koa-scheme": "^2.2.1",
     "koa-static": "^2.0.0",
+    "koa-static-cache": "latest",
     "mongoose": "^4.7.7",
     "nodemailer": "^0.7.1",
     "path": "^0.12.7",
