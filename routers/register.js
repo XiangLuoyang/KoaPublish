@@ -20,7 +20,7 @@ function sendEmail(key,email){
     from:"Fred Foo <272535439@qq.com>",//标题
     to: email,//收件人
     subject: "Hello world", // 标题
-    html: "<a href='http://http://112.126.78.86/#/verifyemail?verifyKey=" + key + "'>点击进行邮箱验证</a> 世界，你好！" // html 内容
+    html: "<a href='http://112.126.78.86/#/verifyemail?verifyKey=" + key + "'>点击进行邮箱验证</a> 世界，你好！" // html 内容
   };
 
   stmpTransport.sendMail(mailOptions,function(error,response){
