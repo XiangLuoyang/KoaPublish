@@ -38,7 +38,7 @@ exports.post = function * (){
       }
 
       if(defArg && patch_model == 'condition'){
-        patchData.defArg = defArg
+        patchData.defArg = JSON.stringify(defArg)
       }
       yield Patch.addPatch(patchData)
 
