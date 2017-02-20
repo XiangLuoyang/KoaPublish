@@ -7,7 +7,7 @@ var RedisCache = cache.RedisCache();
 module.exports = {
   port:process.env.PORT || 3000,
   mongodb:{
-    url: 'mongodb://192.168.0.4:27017/patch'
+    url: 'mongodb://192.168.0.2:27017/patch'
   },
   schemeConf:path.join(__dirname,'./config.scheme'),
   staticPath:"http://112.126.78.86:80/",
