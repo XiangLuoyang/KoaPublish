@@ -8,6 +8,7 @@ exports.post = function * (){
   //yield client.SELECT(1)
   //var result = yield client.keys('*')
   //var result = yield db.selectDB("select * from app")
+  console.log('__________jwttoken',this.state.user)
   var appList = yield App.getAppByUId(this.state.user)
   this.body = {
     code:0,
