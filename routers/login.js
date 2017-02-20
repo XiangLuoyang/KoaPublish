@@ -10,7 +10,7 @@ exports.post = function * (){
   var userExist = yield User.getUserByEmail(email);
   if(userExist){
     if(userExist.password === password){
-      var token = jwt.sign(userExist._id,'wsd',{expiresIn: 24 * 60 * 60  /* 1 days */});
+      var token = jwt.sign(userExist._id.toString(),'wsd',{expiresIn: 24 * 60 * 60  /* 1 days */});
       return this.body = {
         code:0,
         token:token,
